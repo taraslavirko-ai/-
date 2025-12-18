@@ -1,0 +1,83 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8; /* неяскравий фон */
+    color: #333;
+}
+
+/* Шапка */
+header {
+    background: linear-gradient(120deg, #cfd9df, #e2ebf0);
+    text-align: center;
+    padding: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Навігація */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* Основний контент */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+/* Карточки */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    animation: slideUp 1.5s ease;
+}
+
+/* Виділення тексту */
+.highlight {
+    color: #2c7be5;
+    font-weight: bold;
+}
+
+/* Підвал */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e9ecef;
+}
+
+/* Анімації */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
